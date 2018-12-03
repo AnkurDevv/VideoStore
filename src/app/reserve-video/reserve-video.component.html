@@ -1,0 +1,59 @@
+ <style>
+ 
+ #main{
+   padding: 5px;
+   border:2px solid black;
+   width:90%;
+   height:90%;
+ }
+
+ </style>
+ 
+ <br>
+  <br>
+
+<div id="main">
+
+ <div style="float:left">
+      <img  src="/assets/images/default.jpg"/>
+ </div>
+
+<!-- Adding a Video FORM -->
+<div style="padding-right:20%">
+
+<form action="/action_page.php">
+  Title:&nbsp; Star wars;
+  <br>
+  Running Time:&nbsp;120 min;
+  <br>
+  Genre:&nbsp;Science Fiction;
+  <br>
+   Rating:&nbsp; 5;
+  
+  <br>
+   Director:&nbsp;George Lucas;>
+  <br>
+   Customer:&nbsp;
+  <select>
+  <option value="default" disabled>Select a customer</option>
+  <option value="customer1">customer1</option>
+  <option value="customer2">Customer2</option>
+  </select> 
+  <br>
+  
+  <br>
+
+<!-- Navigation Buttons -->
+  <a routerLink="/user-video-list"><input type="submit" value="Back"></a> &nbsp;
+  <a routerLink="/user-video-list"><input type="submit" value="Reserve"></a>
+<!-- Navigation Buttons -->
+
+</form> 
+
+</div>
+
+
+<!-- Adding a Video FORM -->
+</div>
+
+  <router-outlet></router-outlet>

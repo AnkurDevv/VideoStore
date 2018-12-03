@@ -1,0 +1,74 @@
+
+  <style>
+  .test{
+    height:20%;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:5px;
+}
+
+a{
+   text-decoration:none;
+   color:white;
+ }
+
+
+</style>
+
+<h1 class="h3 mb-3 font-weight-normal" style="text-align:left"><u>Customers Listings</u></h1>
+<hr>
+
+<!--  Search Box & logout -->
+<pre>
+  <label for="inputSearch" class="sr-only test">Search</label>
+      <input type="text" id="inputSearch" class="form-control test" placeholder="Search"> <button type="button" class="btn btn-light"><a routerLink="" style="color:red">Logout</a></button>
+ </pre>     
+
+<!--  Search Box & logout -->
+
+<!-- Navigation Buttons -->
+
+<button class="btn btn-lg btn-primary btn-block test" type="submit"><a routerLink="/customer-list">Customers</a></button>
+
+<button class="btn btn-lg btn-primary btn-block test" type="submit"><a routerLink="/admin-video-list">Videos</a></button>
+
+<!-- Navigation Buttons -->
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">City</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>155 test avenue</td>
+      <td>Toronto</td>
+      <td>647-32132131</td>
+      <td>active</td>
+    </tr>
+
+      <tr>
+      <th scope="row">2</th>
+      <td>Mark2</td>
+      <td>Otto</td>
+      <td>155 test avenue</td>
+      <td>Toronto</td>
+      <td>647-32132131</td>
+      <td>expired</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<router-outlet> </router-outlet>

@@ -1,3 +1,78 @@
-<p>
-  admin-video-list works!
-</p>
+<style>
+
+ .test{
+    height:20%;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:15px;
+}
+
+ a{
+   text-decoration:none;
+   color:white;
+ }
+
+</style>
+
+
+<h1 class="h3 mb-3 font-weight-normal" style="text-align:left"><u>Video Listings</u></h1>
+<hr>
+
+<!--  Search Box & logout -->
+<pre>
+  <label for="inputSearch" class="sr-only test">Search</label>
+      <input type="text" id="inputSearch" class="form-control test" placeholder="Search"> 
+     
+      <button type="button" class="btn btn-light" style="float:right"><a routerLink="" style="color:red">Logout</a></button>
+      <button type="button" class="btn btn-light" style="float:left"><a routerLink="/add-video" style="color:Blue">Add a Video</a></button>
+ </pre>     
+
+<!--  Search Box & logout -->
+
+
+ <!-- Navigation Buttons -->
+
+<button class="btn btn-lg btn-primary btn-block test" type="submit"><a routerLink="/customer-list">Customers</a></button>
+<button class="btn btn-lg btn-primary btn-block test" type="submit"><a routerLink="/admin-video-list">Videos</a></button>
+
+<!-- Navigation Buttons -->
+
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Running Time</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Director</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Lord of The Rings</td>
+      <td>106 Minutes</td>
+      <td>Fantasy</td>
+      <td>4 stars</td>
+      <td>Perter Jackson</td>
+      <td>Available</td>
+      <td> <button type="button" class="btn btn-light"> <a routerLink="/update-video" style="color:black"> Update </a></button> </td>
+      <td> <button type="button" class="btn btn-light"><a routerLink="/admin-video-list" style="color:black"> Delete</a></button> </td>
+   <tr>
+      <th scope="row">2</th>
+      <td>Mission Impossible: Fallout</td>
+      <td>128 Minutes</td>
+      <td>Action/Thriller</td>
+      <td>5 stars</td>
+      <td>Perter</td>
+      <td>Unavailable</td>
+      <td> <button type="button" class="btn btn-light"><a routerLink="/update-video" style="color:black"> Update </a></button> </td>
+      <td> <button type="button" class="btn btn-light"><a routerLink="/admin-video-list" style="color:black"> Delete</a></button> </td>
+    </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

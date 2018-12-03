@@ -1,0 +1,71 @@
+ <style>
+ 
+ #main{
+   padding: 5px;
+   border:2px solid black;
+   width:90%;
+   height:90%;
+ }
+
+ </style>
+ 
+ <br>
+  <br>
+
+<div id="main">
+
+ <div style="float:left">
+      <img  src="/assets/images/default.jpg"/>
+ </div>
+
+<!-- Adding a Video FORM -->
+<div style="padding-right:20%">
+
+<form action="/action_page.php">
+  Title:&nbsp;
+  <input type="text" name="videoTitle" value="Mickey">
+  <br>
+  Running Time:&nbsp;
+  <input type="text" name="runTime" value="100">
+  <br>
+  Genre:&nbsp;
+  <select>
+  <option value="default" disabled>Select a Genre</option>
+  <option value="Action">Action</option>
+  <option value="Adventure">Adventure</option>
+  <option value="Science-fiction">Science-fiction</option>
+  </select> 
+  <br>
+   Rating:&nbsp;
+  <select>
+  <option value="default" disabled>Select a rating</option>
+  <option value=1>1</option>
+  <option value=2>2</option>
+  <option value=3>3</option>
+  <option value=4>4</option>
+  <option value=5>5</option>
+  </select> 
+  <br>
+   Director:&nbsp;
+  <input type="text" name="director" value="director name here">
+  <br>
+   Status:&nbsp;
+  <select>
+  <option value="default" disabled>Select a Status</option>
+  <option value="available">Available</option>
+  <option value="unavailable">UnAvailable</option>
+  </select> 
+  <br>
+  
+  <br>
+  <input type="submit" value="Submit">
+  <input type="submit" value="Update">
+</form> 
+
+</div>
+
+
+<!-- Adding a Video FORM -->
+</div>
+
+  <router-outlet></router-outlet>
