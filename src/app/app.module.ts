@@ -11,6 +11,7 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { UpdateVideoComponent } from './update-video/update-video.component';
 import { ReserveVideoComponent } from './reserve-video/reserve-video.component';
 import { AddVideoComponent } from './add-video/add-video.component';
+import { LoginComponent } from './login/login.component';
 
 // const routes: Routes = [
 //  // { path: 'userVideoList', component: [UserVideoListComponent] },
@@ -26,21 +27,23 @@ import { AddVideoComponent } from './add-video/add-video.component';
     CustomerListComponent,
     UpdateVideoComponent,
     ReserveVideoComponent,
-    AddVideoComponent
+    AddVideoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(
       [
+        {path:'',component: LoginComponent},
         {path:'user-video-list',component: UserVideoListComponent},
         {path:'admin-video-list',component: AdminVideoListComponent},
         {path:'admin-login',component: AdminLoginComponent},
         {path:'customer-list',component: CustomerListComponent},
         {path:'add-video',component: AddVideoComponent},
         {path:'reserve-video',component: ReserveVideoComponent}, 
-        {path:'update-video',component: UpdateVideoComponent}  
-      ]
+        {path:'update-video',component: UpdateVideoComponent}
+       ]
     )
   ],
   providers: [],

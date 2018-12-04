@@ -1,0 +1,33 @@
+  <style>
+  .test{
+    height:20%;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:5px;
+}
+  h1{
+    background-color:black;
+    color:white;
+    padding-top:0px;
+  }
+ a{
+   text-decoration:none;
+   color:white;
+ }
+  </style>
+  
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Welcome To Our Video Store</h1>
+      <label for="inputEmail" class="sr-only test">UserName</label>
+      <input type="email" id="inputEmail" class="form-control test" placeholder="UserName" required autofocus> 
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control test" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        
+      </div>
+      <button class="btn btn-lg btn-primary btn-block test" type="submit"><a routerLink="/user-video-list"> Sign in</a></button>
+    </form>
+  </body>
